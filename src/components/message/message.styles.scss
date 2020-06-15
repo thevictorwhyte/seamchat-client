@@ -1,0 +1,94 @@
+.message-container {
+    display: flex;
+    flex-direction: column; 
+    margin: 1rem 0;
+
+}
+
+.message {
+    width: 50%;
+    display: block;
+    background-color: var(--color-grey-dark-1);
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 10;
+    color: var(--color-grey-light-3);
+    &:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-right: 5px solid var(--color-grey-dark-1);
+        border-left: 5px solid transparent ;
+        border-top: 5px solid var(--color-grey-dark-1);
+        border-bottom: 5px solid transparent;
+        border-radius: 3px;
+        left: -.5rem;
+        top: 0;
+        z-index: 1;
+      }
+      
+    &__name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+
+    &__text {
+        font-size: 1.3rem;
+        color: var(--color-grey-light-4);
+    }
+
+    &__time {
+        display: block;
+        margin-top: .5rem;
+        font-size: .8rem;
+        font-weight: 400;
+        text-align: right;
+    }
+}
+
+.message-mine {
+    width: 50%;
+    display: block;
+    background-color: var(--color-dark);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    position: relative;
+    align-self: flex-end;
+    z-index: 10;
+    color: var(--color-grey-light-3);
+    &:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 5px solid var(--color-dark);
+        border-right: 5px solid transparent ;
+        border-top: 5px solid var(--color-dark);
+        border-bottom: 5px solid transparent;
+        border-radius: 3px;
+        right: -.5rem;
+        top: 0;
+        z-index: 1;
+      }
+      
+
+
+    &__text {
+        font-size: 1.3rem;
+        color: var(--color-grey-light-4);
+    }
+
+    &__time {
+        display: block;
+        margin-top: .5rem;
+        font-size: .8rem;
+        font-weight: 400;
+        text-align: right;
+    }
+}

@@ -1,0 +1,46 @@
+.navigation-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-dark);
+    width: 15%;
+}
+
+.legal {
+    font-size: 1.2rem;
+    color: var(--color-grey-light-4);
+    text-align: center;
+    padding: 1.5rem;  
+
+    &__text {
+        display: inline-block;
+    }
+}
+
+.mode {
+    &__button {
+        background-color: var(--color-button-toggle-background);
+        padding: 1rem;
+        //margin-bottom: 1rem;
+        border-radius: 5px;
+        border: none;
+        color: var(--color-button-toggle-text);
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: inherit;
+        transition: all .2s;
+
+        &:hover {
+            transform: translateY(-.5rem);
+        }
+        &:active {
+            transform: translateY(0);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+

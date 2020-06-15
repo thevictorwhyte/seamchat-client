@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.darkmode {
+  --color-primary: #0e0e0e;
+  --color-primary-light: #363636;
+  --color-primary-dark: #000000;
+  
+    --color-dark: #0e0e0e;
+    --color-dark-1: #1b1b1b;
+  
+  
+    --color-secondary: #887CAF;
+
+    --color-search: #333;
+  
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+  
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+  
+    --color-dark-1: #404040;
+
+    --color-border: rgba(255, 255, 255, .2);
+
+    --color-button-toggle-background: #fff;
+    --color-button-toggle-text: rgb(0, 0, 0);
+
+    --form-input: #a5a3a3;
+    --form-btn-bgcolor: rgb(0, 0, 0); 
+    --form-btn-color: rgb(194, 194, 194);
+
+    --form-border: 1px solid rgba(255,255,255,.5);
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.lightmode {
+  --color-primary: #8f8f8f;
+  --color-primary-light: rgb(222, 223, 224);
+  --color-primary-dark: rgb(106, 106, 107);
+
+  --color-dark: rgb(204, 204, 204);
+  --color-dark-1: #1b1b1b;
+
+
+  --color-secondary: #887CAF;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #111111;
+  --color-grey-light-4: rgb(14, 13, 13);
+
+  --color-grey-dark-1: #e6e3e3;
+  --color-grey-dark-2: rgb(34, 34, 34);
+  --color-grey-dark-3: #999;
+
+  --color-dark-1: #f7f3f3;
+
+  --color-border: rgba(19, 19, 19, 0.2);
+
+  --color-button-toggle-background: rgb(0, 0, 0);
+  --color-button-toggle-text: #fff;
+
+  --color-search: #000;
+
+  --form-input: #1b1b1b;
+  --form-btn-bgcolor: rgb(255, 255, 255); 
+  --form-btn-color: rgb(10, 10, 10);
+
+  --form-border: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62.5% */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-dark-1);
 }
